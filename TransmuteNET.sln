@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransmuteNET.Core", "Transm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransmuteNET.CLI", "TransmuteNET.CLI\TransmuteNET.CLI.csproj", "{3E627320-96C2-4307-8076-3FBEE12FA0D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransmuteNET.Tests", "TransmuteNET.Tests\TransmuteNET.Tests.csproj", "{61774762-927C-43D7-B4FF-6BF063D0C46A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3E627320-96C2-4307-8076-3FBEE12FA0D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E627320-96C2-4307-8076-3FBEE12FA0D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E627320-96C2-4307-8076-3FBEE12FA0D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61774762-927C-43D7-B4FF-6BF063D0C46A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61774762-927C-43D7-B4FF-6BF063D0C46A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61774762-927C-43D7-B4FF-6BF063D0C46A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61774762-927C-43D7-B4FF-6BF063D0C46A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
