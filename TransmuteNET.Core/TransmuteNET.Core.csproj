@@ -4,7 +4,25 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>TransmuteNET Core</Title>
+    <Authors>Michał Derkowski</Authors>
+    <Description>Converting files using the Transmute service via the REST API.</Description>
+    <PackageProjectUrl>https://github.com/michupl22/TransmuteNET</PackageProjectUrl>
+    <PackageIcon>transmute.png</PackageIcon>
+    <RepositoryUrl>https://github.com/michupl22/TransmuteNET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>transmute,file converting,rest api</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Administrator\Downloads\transmute.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="RestSharp" Version="114.0.0" />
