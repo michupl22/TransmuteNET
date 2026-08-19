@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <RunConfiguration>
+    <EnvironmentVariables>
+      <TRANSMUTE_HOST>http://localhost:3313</TRANSMUTE_HOST>
+      <TRANSMUTE_APIKEY>SECRET_KEY</TRANSMUTE_APIKEY>
+    </EnvironmentVariables>
+  </RunConfiguration>
+</RunSettings>

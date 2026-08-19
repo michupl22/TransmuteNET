@@ -9,6 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Samples\fitness_banner.jpg" />
+    <None Remove="Samples\sample.runsettings" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Samples\fitness_banner.jpg" />
+    <EmbeddedResource Include="Samples\sample.runsettings">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="10.0.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -21,6 +33,11 @@
     </PackageReference>
     <PackageReference Include="NUnit3TestAdapter" Version="6.2.0" />
     <PackageReference Include="Shouldly" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TransmuteNET.Core\TransmuteNET.Core.csproj" />
+    <ProjectReference Include="..\TransmuteNET.Entities\TransmuteNET.Entities.csproj" />
   </ItemGroup>
 
   <ItemGroup>
