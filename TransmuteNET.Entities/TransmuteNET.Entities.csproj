@@ -4,6 +4,24 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>TransmuteNET Entities</Title>
+    <Authors>Michał Derkowski</Authors>
+    <Description>Processing objects for communication with the Transmute service via the REST API.</Description>
+    <PackageProjectUrl>https://github.com/michupl22/TransmuteNET</PackageProjectUrl>
+    <PackageIcon>transmute.png</PackageIcon>
+    <RepositoryUrl>https://github.com/michupl22/TransmuteNET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>transmute,file converting,rest api,entities</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Administrator\Downloads\transmute.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

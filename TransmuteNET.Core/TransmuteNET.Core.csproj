@@ -12,7 +12,7 @@
     <PackageIcon>transmute.png</PackageIcon>
     <RepositoryUrl>https://github.com/michupl22/TransmuteNET</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>transmute,file converting,rest api</PackageTags>
+    <PackageTags>transmute,file converting,rest api,core</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
