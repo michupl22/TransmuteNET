@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.37614.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransmuteNET.Entities", "TransmuteNET.Entities\TransmuteNET.Entities.csproj", "{F4BEC367-3BB1-4F2C-999D-1F3FC12730CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransmuteNET.Core", "TransmuteNET.Core\TransmuteNET.Core.csproj", "{DA611041-E8A2-4D1A-A7E4-8FD9D5310173}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F4BEC367-3BB1-4F2C-999D-1F3FC12730CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4BEC367-3BB1-4F2C-999D-1F3FC12730CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4BEC367-3BB1-4F2C-999D-1F3FC12730CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA611041-E8A2-4D1A-A7E4-8FD9D5310173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA611041-E8A2-4D1A-A7E4-8FD9D5310173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA611041-E8A2-4D1A-A7E4-8FD9D5310173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA611041-E8A2-4D1A-A7E4-8FD9D5310173}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
