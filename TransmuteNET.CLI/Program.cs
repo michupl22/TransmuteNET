@@ -4,6 +4,7 @@ using TransmuteNET.CLI.Utilities;
 using TransmuteNET.Core;
 using TransmuteNET.Entities;
 using TransmuteNET.Entities.Data;
+using TransmuteNET.Entities.Health;
 using TransmuteNET.Entities.Tasks;
 
 namespace TransmuteNET.CLI
@@ -32,6 +33,14 @@ namespace TransmuteNET.CLI
             {
                 TransmuteConfig config = options.GetConfig();
                 _service = new TransmuteService(config);
+                Informant.Trace("Connecting...");
+                Liveness serviceState = _service.GetLiveness();
+
+                if (serviceState.Status != "alive")
+                {
+                    throw new OperationCanceledException("Service is not alive.");
+                }
+
                 Informant.Info("Connected with " + config.Address);
 
                 _output = DirectoryCreator.GetDirectory(options.Output!);
@@ -48,12 +57,17 @@ namespace TransmuteNET.CLI
                 _watcher.Created += OnCreated;
                 _watcher.Error += OnError;
 
-                Console.Title = Path.GetDirectoryName(_watcher.Path) + " - " + DEFAULT_TITLE;
+                Console.Title = Path.GetFileName(_watcher.Path) + " - " + DEFAULT_TITLE;
                 Informant.Success("Converter has been initialized. Waiting for files...");
             }
             catch (Exception ex)
             {
                 Informant.Error(ex);
+
+                if (_service is not null && _service.StatusCode == 0)
+                {
+                    Informant.Error("The service is unavailable");
+                }
             }
 
             ConsoleKeyInfo? pressedKey = null;
